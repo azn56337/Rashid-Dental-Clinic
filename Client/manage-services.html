@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Services | Rashid Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>RDC Admin</h2>
+            </div>
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="manage-appointments.html">Appointments</a></li>
+                <li><a href="manage-doctors.html">Doctors</a></li>
+                <li><a href="manage-services.html" class="active">Services</a></li>
+                <li><a href="manage-patients.html">Patients</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="admin-header">
+                <h1>Manage Dental Services</h1>
+                <button class="btn" id="addServiceBtn">
+                    Add New Service
+                </button>
+            </header>
+            <section class="admin-table">
+                <table id="servicesAdminTable">
+                    <thead>
+                        <tr>
+                            <th>Service Name</th>
+                            <th>Description</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>General Dental Checkup</td>
+                            <td>Routine dental examination and consultation.</td>
+                            <td>30 Minutes</td>
+                            <td>Rs. 1,500</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Teeth Cleaning</td>
+                            <td>Professional cleaning to remove plaque and tartar.</td>
+                            <td>45 Minutes</td>
+                            <td>Rs. 2,000</td>
+                          <td>
+    <span class="status confirmed">Active</span>
+</td>
+                            <td>
+                                <button class="btn">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Root Canal Treatment</td>
+                            <td>Treatment to save infected or damaged teeth.</td>
+                            <td>90 Minutes</td>
+                            <td>Rs. 12,000</td>
+                            <td>Active</td>
+                           <td>
+    <div class="table-actions">
+        <button class="btn">View</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Delete</button>
+    </div>
+</td>
+                        </tr>
+                        <tr>
+                            <td>Teeth Whitening</td>
+                            <td>Cosmetic whitening treatment for brighter teeth.</td>
+                            <td>60 Minutes</td>
+                            <td>Rs. 8,000</td>
+                            <td>
+    <span class="status cancelled">Inactive</span>
+</td>
+                           <td>
+    <div class="table-actions">
+        <button class="btn">View</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Delete</button>
+    </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

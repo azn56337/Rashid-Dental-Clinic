@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rashid Dental Clinic | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Starts -->
+
+    <header>
+
+        <div class="logo">
+
+            <h2>Rashid Dental Clinic</h2>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="doctors.html">Doctors</a></li>
+
+                <li><a href="appointment.html">Book Appointment</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="login.html" class="active">Login</a></li>
+
+                <li><a href="register.html">Register</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Header Ends -->
+
+
+    <!-- Login Section -->
+
+    <section class="login-section">
+
+        <div class="login-container">
+
+            <h1>Login</h1>
+
+            <p>
+
+                Login to access your patient or administrator dashboard.
+
+            </p>
+
+            <form action="#">
+
+                <div class="form-group">
+
+                    <label for="role">Login As</label>
+
+                    <select id="role" required>
+
+                        <option value="">Select Role</option>
+
+                        <option value="patient">Patient</option>
+
+                        <option value="admin">Administrator</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <div class="login-options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+
+            <div class="register-link">
+
+                <p>
+
+                    Don't have an account?
+
+                    <a href="register.html">
+
+                        Register Here
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 Rashid Dental Clinic. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

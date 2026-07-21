@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Appointments | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>RDC Admin</h2>
+
+            </div>
+
+            <ul>
+
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+
+                <li><a href="manage-appointments.html" class="active">Appointments</a></li>
+
+                <li><a href="manage-doctors.html">Doctors</a></li>
+
+                <li><a href="manage-services.html">Services</a></li>
+
+                <li><a href="manage-patients.html">Patients</a></li>
+
+                <li><a href="availability.html">Availability</a></li>
+
+                <li><a href="settings.html">Settings</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="admin-header">
+
+                <h1>Manage Appointments</h1>
+
+            </header>
+
+            <!-- Filters -->
+
+            <section class="filter-section">
+
+                <input type="text" id="apptSearchInput" placeholder="Search by Booking ID or Patient Name">
+
+                <select id="apptDoctorFilter">
+
+                    <option value="">All Doctors</option>
+
+                </select>
+
+                <select id="apptServiceFilter">
+
+                    <option value="">All Services</option>
+
+                </select>
+
+                <select id="apptStatusFilter">
+
+                    <option value="">All Status</option>
+
+                    <option>Pending</option>
+
+                    <option>Confirmed</option>
+
+                    <option>Completed</option>
+
+                    <option>Cancelled</option>
+
+                    <option>Rejected</option>
+
+                </select>
+
+                <input type="date" id="apptDateFilter">
+
+                <button class="btn" id="apptSearchBtn">Search</button>
+
+            </section>
+
+            <!-- Appointment Table -->
+
+            <section class="admin-table">
+
+                <table id="adminAppointmentsTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Booking ID</th>
+
+                            <th>Patient</th>
+
+                            <th>Doctor</th>
+
+                            <th>Service</th>
+
+                            <th>Date</th>
+
+                            <th>Time</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>RDC1001</td>
+
+                            <td>Muhammad Azan</td>
+
+                            <td>Dr. Ahmed Rashid</td>
+
+                            <td>Dental Checkup</td>
+
+                            <td>20 Jul 2026</td>
+
+                            <td>10:00 AM</td>
+
+                            <td>
+    <span class="status pending">Pending</span>
+</td>
+<td>
+    <span class="status confirmed">Confirmed</span>
+</td>
+
+<td>
+    <span class="status completed">Completed</span>
+</td>
+<td>
+
+    <div class="table-actions">
+
+        <button class="btn">Confirm</button>
+
+        <button class="btn">Reject</button>
+
+        <button class="btn">Reschedule</button>
+
+    </div>
+
+</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>RDC1002</td>
+
+                            <td>Ali Khan</td>
+
+                            <td>Dr. Sarah Khan</td>
+
+                            <td>Teeth Cleaning</td>
+
+                            <td>21 Jul 2026</td>
+
+                            <td>11:00 AM</td>
+
+                            <td>Confirmed</td>
+
+                            <td>
+
+                                <button class="btn">Completed</button>
+
+                                <button class="btn">Cancel</button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>RDC1003</td>
+
+                            <td>Ahmed Ali</td>
+
+                            <td>Dr. Fatima Noor</td>
+
+                            <td>Root Canal</td>
+
+                            <td>22 Jul 2026</td>
+
+                            <td>03:00 PM</td>
+
+                            <td>Completed</td>
+
+                            <td>
+
+                                <button class="btn">View</button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

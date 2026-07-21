@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Doctors | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>RDC Admin</h2>
+
+            </div>
+
+            <ul>
+
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+
+                <li><a href="manage-appointments.html">Appointments</a></li>
+
+                <li><a href="manage-doctors.html" class="active">Doctors</a></li>
+
+                <li><a href="manage-services.html">Services</a></li>
+
+                <li><a href="manage-patients.html">Patients</a></li>
+
+                <li><a href="availability.html">Availability</a></li>
+
+                <li><a href="settings.html">Settings</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="admin-header">
+
+                <h1>Manage Doctors</h1>
+
+                <button class="btn" id="addDoctorBtn">Add New Doctor</button>
+
+            </header>
+
+            <!-- Doctor Table -->
+
+            <section class="admin-table">
+
+                <table id="doctorsAdminTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Photo</th>
+
+                            <th>Name</th>
+
+                            <th>Specialization</th>
+
+                            <th>Available Days</th>
+
+                            <th>Working Hours</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <img src="../images/doctor1.jpg" alt="Doctor" class="table-image">
+                            </td>
+
+                            <td>Dr. Ahmed Rashid</td>
+
+                            <td>General Dentist</td>
+
+                            <td>Mon - Fri</td>
+
+                            <td>9:00 AM - 5:00 PM</td>
+
+                            <td>
+    <span class="status confirmed">Active</span>
+</td>
+
+                            <td>
+
+                                <button class="btn">View</button>
+
+                                <button class="btn">Edit</button>
+
+                                <button class="btn">Delete</button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img src="../images/doctor2.jpg" alt="Doctor" class="table-image">
+                            </td>
+
+                            <td>Dr. Sarah Khan</td>
+
+                            <td>Orthodontist</td>
+
+                            <td>Mon - Sat</td>
+
+                            <td>10:00 AM - 6:00 PM</td>
+
+                            <td>Active</td>
+
+                           <td>
+
+    <div class="table-actions">
+
+        <button class="btn">View</button>
+
+        <button class="btn">Edit</button>
+
+        <button class="btn">Delete</button>
+
+    </div>
+
+</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img src="../images/doctor3.jpg" alt="Doctor" class="table-image">
+                            </td>
+
+                            <td>Dr. Ali Hassan</td>
+
+                            <td>Dental Surgeon</td>
+
+                            <td>Tue - Sat</td>
+
+                            <td>11:00 AM - 7:00 PM</td>
+
+                           <td>
+    <span class="status cancelled">Inactive</span>
+</td>
+
+                           <td>
+
+    <div class="table-actions">
+
+        <button class="btn">View</button>
+
+        <button class="btn">Edit</button>
+
+        <button class="btn">Delete</button>
+
+    </div>
+
+</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

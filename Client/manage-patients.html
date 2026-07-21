@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Patients | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>RDC Admin</h2>
+
+            </div>
+
+            <ul>
+
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+
+                <li><a href="manage-appointments.html">Appointments</a></li>
+
+                <li><a href="manage-doctors.html">Doctors</a></li>
+
+                <li><a href="manage-services.html">Services</a></li>
+
+                <li><a href="manage-patients.html" class="active">Patients</a></li>
+
+                <li><a href="availability.html">Availability</a></li>
+
+                <li><a href="settings.html">Settings</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="admin-header">
+
+                <h1>Manage Patients</h1>
+
+            </header>
+
+            <!-- Search Section -->
+
+            <section class="filter-section">
+
+                <input
+                    type="text"
+                    id="patientSearchInput"
+                    placeholder="Search by patient name or email">
+
+                <button class="btn" id="patientSearchBtn">
+
+                    Search
+
+                </button>
+
+            </section>
+
+            <!-- Patient Table -->
+
+            <section class="admin-table">
+
+                <table id="patientsAdminTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Patient ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Phone</th>
+
+                            <th>Registered On</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>P001</td>
+
+                            <td>Muhammad Azan</td>
+
+                            <td>azan@example.com</td>
+
+                            <td>03001234567</td>
+
+                            <td>10 July 2026</td>
+
+                           <td>
+
+    <span class="status confirmed">
+
+        Active
+
+    </span>
+
+</td>
+
+                        <td>
+
+    <div class="table-actions">
+
+        <button class="btn">
+
+            View
+
+        </button>
+
+        <button class="btn">
+
+            Deactivate
+
+        </button>
+
+    </div>
+
+</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>P002</td>
+
+                            <td>Ali Khan</td>
+
+                            <td>ali@example.com</td>
+
+                            <td>03111234567</td>
+
+                            <td>12 July 2026</td>
+
+                            <td>Active</td>
+
+                            <td>
+
+                                <button class="btn">View</button>
+
+                                <button class="btn">Deactivate</button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>P003</td>
+
+                            <td>Ahmed Raza</td>
+
+                            <td>ahmed@example.com</td>
+
+                            <td>03211234567</td>
+
+                            <td>14 July 2026</td>
+
+                           <td>
+
+    <span class="status cancelled">
+
+        Inactive
+
+    </span>
+
+</td>
+
+                           <td>
+
+    <div class="table-actions">
+
+        <button class="btn">
+
+            View
+
+        </button>
+
+        <button class="btn">
+
+            Deactivate
+
+        </button>
+
+    </div>
+
+</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>P004</td>
+
+                            <td>Fatima Noor</td>
+
+                            <td>fatima@example.com</td>
+
+                            <td>03331234567</td>
+
+                            <td>15 July 2026</td>
+
+                            <td>Active</td>
+
+                            <td>
+
+                                <button class="btn">View</button>
+
+                                <button class="btn">Deactivate</button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

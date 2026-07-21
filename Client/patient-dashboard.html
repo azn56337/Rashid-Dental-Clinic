@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <h2>Rashid Dental Clinic</h2>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="patient-dashboard.html" class="active">Dashboard</a></li>
+
+                <li><a href="appointment.html">Book Appointment</a></li>
+
+                <li><a href="my-appointments.html">My Appointments</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Dashboard Banner -->
+
+    <section class="dashboard-banner">
+
+        <h1 id="dashboardWelcome">Welcome, Patient</h1>
+
+        <p>
+
+            Manage your appointments and profile from your dashboard.
+
+        </p>
+
+    </section>
+
+    <!-- Dashboard Cards -->
+
+    <section class="dashboard-cards">
+
+        <div class="dashboard-card">
+
+            <h2>Total Appointments</h2>
+
+            <h3 id="statTotalAppointments">0</h3>
+
+            <p>Your booked appointments.</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>Pending</h2>
+
+            <h3 id="statPending">0</h3>
+
+            <p>Waiting for approval.</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>Confirmed</h2>
+
+            <h3 id="statConfirmed">0</h3>
+
+            <p>Upcoming appointments.</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>Completed</h2>
+
+            <h3 id="statCompleted">0</h3>
+
+            <p>Successfully completed.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Quick Actions -->
+
+    <section class="quick-actions">
+
+        <h2>Quick Actions</h2>
+
+        <div class="action-buttons">
+
+            <a href="appointment.html" class="btn">
+
+                Book Appointment
+
+            </a>
+
+            <a href="my-appointments.html" class="btn">
+
+                View My Appointments
+
+            </a>
+
+            <a href="profile.html" class="btn">
+
+                Edit Profile
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Upcoming Appointment -->
+
+    <section class="upcoming-appointment">
+
+        <h2>Upcoming Appointment</h2>
+
+        <table id="upcomingAppointmentTable">
+
+            <tr>
+
+                <th>Doctor</th>
+
+                <th>Service</th>
+
+                <th>Date</th>
+
+                <th>Time</th>
+
+                <th>Status</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Dr. Ahmed Rashid</td>
+
+                <td>Dental Checkup</td>
+
+                <td>20 July 2026</td>
+
+                <td>10:00 AM</td>
+
+                <td>Confirmed</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 Rashid Dental Clinic. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

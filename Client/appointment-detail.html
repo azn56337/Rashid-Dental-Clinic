@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment Details | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <h2>Rashid Dental Clinic</h2>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="patient-dashboard.html">Dashboard</a></li>
+
+                <li><a href="appointment.html">Book Appointment</a></li>
+
+                <li><a href="my-appointments.html">My Appointments</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Page Banner -->
+
+    <section class="page-banner">
+
+        <h1>Appointment Details</h1>
+
+        <p>
+
+            View complete information about your appointment.
+
+        </p>
+
+    </section>
+
+    <!-- Appointment Details -->
+
+    <section class="details-section">
+
+        <div class="details-card">
+
+            <h2>Booking Information</h2>
+
+            <table id="appointmentDetailTable">
+
+                <tr>
+
+                    <th>Booking Reference</th>
+
+                    <td id="detailBookingId">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Patient Name</th>
+
+                    <td id="detailPatientName">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Doctor</th>
+
+                    <td id="detailDoctor">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Service</th>
+
+                    <td id="detailService">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Appointment Date</th>
+
+                    <td id="detailDate">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Appointment Time</th>
+
+                    <td id="detailTime">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Reason For Visit</th>
+
+                    <td id="detailReason">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Status</th>
+
+                    <td id="detailStatus">-</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Created On</th>
+
+                    <td id="detailCreated">-</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- Notes -->
+
+    <section class="appointment-notes">
+
+        <h2>Patient Instructions</h2>
+
+        <ul>
+
+            <li>Please arrive at least 15 minutes before your appointment.</li>
+
+            <li>Bring any previous dental reports if available.</li>
+
+            <li>If you cannot attend, cancel your appointment in advance.</li>
+
+            <li>Follow the dentist's instructions after treatment.</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Action Buttons -->
+
+    <section class="details-actions">
+
+        <a href="my-appointments.html" class="btn">
+
+            Back to My Appointments
+
+        </a>
+
+        <button class="btn" id="cancelAppointmentDetailBtn">
+
+            Cancel Appointment
+
+        </button>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 Rashid Dental Clinic. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

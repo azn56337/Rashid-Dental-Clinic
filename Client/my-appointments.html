@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Appointments | Rashid Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <h2>Rashid Dental Clinic</h2>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="patient-dashboard.html">Dashboard</a></li>
+
+                <li><a href="appointment.html">Book Appointment</a></li>
+
+                <li><a href="my-appointments.html" class="active">My Appointments</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Page Banner -->
+
+    <section class="page-banner">
+
+        <h1>My Appointments</h1>
+
+        <p>
+
+            View your appointment history and current booking status.
+
+        </p>
+
+    </section>
+
+    <!-- Appointment Table -->
+
+    <section class="appointment-list">
+
+        <table id="myAppointmentsTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>Booking ID</th>
+
+                    <th>Doctor</th>
+
+                    <th>Service</th>
+
+                    <th>Date</th>
+
+                    <th>Time</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>RDC-1001</td>
+
+                    <td>Dr. Ahmed Rashid</td>
+
+                    <td>Dental Checkup</td>
+
+                    <td>20 July 2026</td>
+
+                    <td>10:00 AM</td>
+
+                    <td>Confirmed</td>
+
+                    <td>
+
+                        <a href="appointment-details.html" class="btn">
+
+                            View
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>RDC-1002</td>
+
+                    <td>Dr. Sarah Khan</td>
+
+                    <td>Teeth Cleaning</td>
+
+                    <td>25 July 2026</td>
+
+                    <td>02:00 PM</td>
+
+                    <td>Pending</td>
+
+                    <td>
+
+                        <a href="appointment-details.html" class="btn">
+
+                            View
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>RDC-1003</td>
+
+                    <td>Dr. Ali Hassan</td>
+
+                    <td>Root Canal</td>
+
+                    <td>15 June 2026</td>
+
+                    <td>11:00 AM</td>
+
+                    <td>Completed</td>
+
+                    <td>
+
+                        <a href="appointment-details.html" class="btn">
+
+                            Details
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>RDC-1004</td>
+
+                    <td>Dr. Fatima Noor</td>
+
+                    <td>Teeth Whitening</td>
+
+                    <td>28 July 2026</td>
+
+                    <td>04:00 PM</td>
+
+                    <td>Pending</td>
+
+                    <td>
+
+                        <button class="btn">
+
+                            Cancel
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Appointment Status -->
+
+    <section class="appointment-status">
+
+        <h2>Appointment Status Guide</h2>
+
+        <ul>
+
+            <li><strong>Pending:</strong> Waiting for administrator approval.</li>
+
+            <li><strong>Confirmed:</strong> Appointment has been approved.</li>
+
+            <li><strong>Completed:</strong> Treatment has been completed.</li>
+
+            <li><strong>Cancelled:</strong> Appointment has been cancelled.</li>
+
+            <li><strong>Rejected:</strong> Appointment request was rejected.</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 Rashid Dental Clinic. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

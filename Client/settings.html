@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Settings | Rashid Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>RDC Admin</h2>
+            </div>
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="manage-appointments.html">Appointments</a></li>
+                <li><a href="manage-doctors.html">Doctors</a></li>
+                <li><a href="manage-services.html">Services</a></li>
+                <li><a href="manage-patients.html">Patients</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+                <li><a href="home.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="admin-header">
+                <h1>Clinic Settings</h1>
+            </header>
+            <section class="settings-section">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="clinicName">Clinic Name</label>
+                        <input
+                            type="text"
+                            id="clinicName"
+                            value="Rashid Dental Clinic">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Clinic Address</label>
+                        <textarea
+                            id="address"
+                            rows="4">Main Shahrah-e-Faisal, Karachi, Pakistan</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="text"
+                            id="phone"
+                            value="+92 300 1234567">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            value="info@rashiddentalclinic.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="workingHours">Working Hours</label>
+                        <input
+                            type="text"
+                            id="workingHours"
+                            value="Monday - Saturday | 9:00 AM - 7:00 PM">
+                    </div>
+                    <div class="form-group">
+                        <label for="facebook">Facebook</label>
+                        <input
+                            type="text"
+                            id="facebook"
+                            placeholder="Facebook Page URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="instagram">Instagram</label>
+                        <input
+                            type="text"
+                            id="instagram"
+                            placeholder="Instagram Profile URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input
+                            type="text"
+                            id="whatsapp"
+                            placeholder="WhatsApp Number">
+                    </div>
+                    <div class="form-actions">
+    <button type="submit" class="btn">
+        Save Settings
+    </button>
+</div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
